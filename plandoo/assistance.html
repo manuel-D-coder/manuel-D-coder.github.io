@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plandoo — Assistance</title>
+<meta name="description" content="Aide et contact pour Plandoo : questions fréquentes, calendrier, sauvegardes, assistant IA.">
+<style>
+  :root {
+    --fond: #F7F9F9; --surface: #FFFFFF; --texte: #1E2A2D; --doux: #5C6B70;
+    --accent: #1FA7B0; --trait: #E3E8E9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #171F21; --surface: #1F2A2D; --texte: #E8EEEF; --doux: #9AAAB0; --accent: #2CC0C9; --trait: #2C383B; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fond); color: var(--texte);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  .marque { display: flex; align-items: center; gap: 10px; font: 700 18px ui-rounded, -apple-system, sans-serif; }
+  .logo { width: 30px; height: 30px; border-radius: 9px; background: linear-gradient(135deg, var(--accent), #51708D); }
+  h1 { font: 700 34px/1.2 ui-rounded, -apple-system, sans-serif; margin: 28px 0 6px; }
+  .maj { color: var(--doux); font-size: 15px; margin: 0 0 28px; }
+  .resume {
+    background: var(--surface); border-radius: 18px; padding: 20px 22px; margin-bottom: 28px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05), 0 4px 8px rgba(0,0,0,.08);
+  }
+  .resume h2 { margin-top: 0; }
+  .resume ul { margin: 0; padding-left: 20px; }
+  h2 {
+    font: 700 13px/1.4 ui-rounded, -apple-system, sans-serif; letter-spacing: .06em;
+    text-transform: uppercase; color: var(--accent); margin: 32px 0 8px;
+  }
+  p, li { margin: 0 0 10px; }
+  a { color: var(--accent); }
+  h3 { font: 600 17px/1.4 -apple-system, sans-serif; margin: 18px 0 4px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--trait); color: var(--doux); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="marque"><div class="logo" aria-hidden="true"></div><a href="../" style="color:inherit;text-decoration:none">Plandoo</a></div>
+  <h1>Assistance</h1>
+  <p class="maj">Une question, un problème, une idée ? Écris-moi.</p>
+  <section class="resume">
+  <h2>Nous écrire</h2>
+  <p><a href="mailto:manuel.derussy@gmail.com">manuel.derussy@gmail.com</a></p>
+  <p>Indique ton appareil (iPhone, iPad, Mac ou Apple Watch), sa version et ce que tu faisais quand le problème est arrivé ; une capture d'écran aide beaucoup. Je réponds habituellement en quelques jours. N'envoie jamais ta clé API par courriel.</p>
+  </section>
+  <h2>Questions fréquentes</h2>
+  <h3>Mes cartes passent-elles d'un appareil à l'autre ?</h3>
+  <p>Oui, par ton compte iCloud. Utilise le même identifiant Apple sur tous tes appareils et vérifie qu'iCloud est activé pour Plandoo dans les Réglages de l'appareil. L'Apple Watch reçoit ses données depuis l'iPhone.</p>
+  <h3>Mes événements n'apparaissent pas.</h3>
+  <p>Autorise l'accès au calendrier : Réglages de l'appareil → Confidentialité et sécurité → Calendriers → Plandoo → Accès complet. Plandoo ne fait que lire : il n'ajoute et ne modifie rien.</p>
+  <h3>Comment activer l'assistant IA ?</h3>
+  <p>C'est facultatif. Dans les Réglages de l'app, active « Assistant IA », puis colle ta clé API Anthropic (créée sur console.anthropic.com). Les coûts d'utilisation te sont facturés directement par Anthropic ; tu peux fixer un plafond par mois et exclure des projets.</p>
+  <h3>Où sont mes sauvegardes ?</h3>
+  <p>Dans iCloud Drive → Sauvegardes Apps → Plandoo. Une copie est écrite au plus toutes les 6 heures et les 15 dernières sont gardées.</p>
+  <h3>Comment tout effacer ?</h3>
+  <p>Dans les Réglages de l'app : « Effacer tous les projets et cartes ». L'effacement se propage à tes autres appareils par iCloud. Pense à vérifier qu'une sauvegarde récente existe avant.</p>
+  <h2>Confidentialité</h2>
+  <p>Pour savoir ce que Plandoo fait de tes données, lis la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+
+  <footer>© 2026 Manuel Derussy · Plandoo · <a href="../">Toutes les apps</a></footer>
+</main>
+</body>
+</html>
