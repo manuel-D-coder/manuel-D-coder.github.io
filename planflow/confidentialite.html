@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlanFlow — Politique de confidentialité</title>
+<meta name="description" content="Comment PlanFlow traite tes renseignements : données sur ton appareil et dans ton iCloud, calendrier en lecture seule, assistant IA facultatif avec ta propre clé.">
+<style>
+  :root {
+    --fond: #F7F9F9; --surface: #FFFFFF; --texte: #1E2A2D; --doux: #5C6B70;
+    --accent: #1FA7B0; --trait: #E3E8E9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #171F21; --surface: #1F2A2D; --texte: #E8EEEF; --doux: #9AAAB0; --accent: #2CC0C9; --trait: #2C383B; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fond); color: var(--texte);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  .marque { display: flex; align-items: center; gap: 10px; font: 700 18px ui-rounded, -apple-system, sans-serif; }
+  .logo { width: 30px; height: 30px; border-radius: 9px; background: linear-gradient(135deg, var(--accent), #51708D); }
+  h1 { font: 700 34px/1.2 ui-rounded, -apple-system, sans-serif; margin: 28px 0 6px; }
+  .maj { color: var(--doux); font-size: 15px; margin: 0 0 28px; }
+  .resume {
+    background: var(--surface); border-radius: 18px; padding: 20px 22px; margin-bottom: 28px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05), 0 4px 8px rgba(0,0,0,.08);
+  }
+  .resume h2 { margin-top: 0; }
+  .resume ul { margin: 0; padding-left: 20px; }
+  h2 {
+    font: 700 13px/1.4 ui-rounded, -apple-system, sans-serif; letter-spacing: .06em;
+    text-transform: uppercase; color: var(--accent); margin: 32px 0 8px;
+  }
+  p, li { margin: 0 0 10px; }
+  a { color: var(--accent); }
+  h3 { font: 600 17px/1.4 -apple-system, sans-serif; margin: 18px 0 4px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--trait); color: var(--doux); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="marque"><div class="logo" aria-hidden="true"></div><a href="../" style="color:inherit;text-decoration:none">PlanFlow</a></div>
+  <h1>Politique de confidentialité</h1>
+  <p class="maj">Dernière mise à jour : 7 novembre 2026</p>
+  <section class="resume">
+  <h2>L'essentiel</h2>
+  <ul>
+    <li>Tes projets, cartes, listes et pièces jointes sont enregistrés sur ton appareil et dans ton propre iCloud. Nous n'y avons pas accès.</li>
+    <li>Ton calendrier est lu sur ton appareil, pour afficher tes événements à côté de tes cartes. PlanFlow n'y ajoute et n'y modifie jamais rien.</li>
+    <li>L'assistant IA est facultatif et désactivé au départ. Quand tu t'en sers, il utilise ta propre clé API : les demandes partent directement de ton appareil vers Anthropic, sans passer par nous.</li>
+    <li>Aucune publicité, aucun outil de mesure d'audience, aucune revente de données.</li>
+  </ul>
+  </section>
+  <h2>Qui sommes-nous</h2>
+  <p>PlanFlow est développée par Manuel Derussy, à Montréal (Québec). Pour toute question sur cette politique ou sur tes renseignements personnels : <a href="mailto:manuel.derussy@gmail.com">manuel.derussy@gmail.com</a>. Cette personne est responsable de la protection des renseignements personnels pour PlanFlow, au sens de la Loi 25 du Québec.</p>
+  <h2>À qui s'adresse l'app</h2>
+  <p>PlanFlow aide à organiser ses projets et son temps : cartes, échéances, matrice des priorités, planning de la semaine, sur iPhone, iPad, Mac et Apple Watch.</p>
+  <h2>Ce qui reste sur ton appareil</h2>
+  <ul>
+    <li>Tes données : projets, cartes, listes, notes, pièces jointes et réglages.</li>
+    <li>Ton calendrier : lu sur l'appareil, en lecture seule. Tu peux choisir des calendriers à ignorer.</li>
+    <li>Les rappels d'échéance : ce sont des notifications programmées sur l'appareil lui-même.</li>
+    <li>La lecture à voix haute : elle utilise la voix intégrée de l'appareil.</li>
+    <li>Ta clé API, si tu en saisis une, rangée dans le trousseau de l'appareil.</li>
+  </ul>
+  <h2>Ce qui va dans ton iCloud</h2>
+  <p>Pour retrouver tes données sur tes autres appareils, PlanFlow les synchronise avec ton propre compte iCloud (espace privé, géré par Apple) ; l'Apple Watch reçoit ce dont elle a besoin depuis l'iPhone. Une copie de sauvegarde est aussi écrite dans ton iCloud Drive (dossier « Sauvegardes Apps »), au plus toutes les 6 heures ; les 15 dernières sont conservées.</p>
+  <p>Dans ce même dossier, PlanFlow tient un résumé de ton tableau (projets, cartes, listes, noms des pièces jointes). Il sert à l'assistant que tu utilises sur ton Mac pour te proposer des modifications, qui ne s'appliquent qu'après ta validation. Ce résumé reste dans ton iCloud Drive. Nous n'avons accès ni à ton iCloud, ni à ces fichiers.</p>
+  <h2>Ce qui est envoyé à l'assistant IA</h2>
+  <p>L'assistant est désactivé tant que tu ne l'actives pas dans les Réglages et que tu n'as pas saisi ta clé. Ensuite, rien n'est envoyé sans une demande de ta part (une question, un bilan, un planning). Pour te répondre, il reçoit :</p>
+  <ul>
+    <li>tes projets et tes cartes : titres, notes, échéances, listes et noms des pièces jointes (pas leur contenu) ;</li>
+    <li>les événements de ton calendrier sur la période concernée (titre et heures), sauf ceux des calendriers que tu ignores ;</li>
+    <li>la « mémoire » que tu écris toi-même dans les Réglages, et ta question.</li>
+  </ul>
+  <p>Tu peux exclure des projets entiers de l'assistant et fixer un plafond de dépense par mois. Si un calendrier contient des renseignements sur d'autres personnes (rendez-vous de clients, par exemple), ajoute-le aux calendriers ignorés.</p>
+  <p>Les petites actions proposées par l'assistant (cocher une case, déplacer une carte) s'appliquent directement si tu laisses cette option activée ; tu peux la couper dans les Réglages. Les autres attendent ta validation.</p>
+  <p>L'assistant IA est Claude, d'Anthropic (États-Unis). Les demandes partent directement de ton appareil vers Anthropic, avec ta propre clé : elles ne passent par aucun serveur à nous. Anthropic traite ces données selon les conditions de son offre commerciale, qui excluent leur utilisation pour entraîner ses modèles. Ces données peuvent donc être traitées hors du Québec, aux États-Unis.</p>
+  <h2>Autorisations demandées</h2>
+  <ul>
+    <li>Calendrier : pour afficher tes événements, en lecture seule.</li>
+    <li>Notifications : pour les rappels d'échéance.</li>
+    <li>Appareil photo et micro : pour joindre à une carte la photo ou la vidéo d'un tableau ou d'un document.</li>
+    <li>Face ID ou Touch ID : pour verrouiller l'app, si tu l'actives.</li>
+  </ul>
+  <p>Chaque autorisation est demandée au moment où tu utilises la fonction, et tu peux la retirer dans les Réglages de l'appareil. Si tu utilises Siri ou Raccourcis avec PlanFlow, ta demande passe par Siri, selon les conditions d'Apple.</p>
+  <h2>Ce que nous recevons</h2>
+  <p>Seulement les courriels que tu choisis de nous écrire et, pendant la bêta, les retours et rapports de plantage que tu transmets par TestFlight, selon les conditions d'Apple. Pas de compte chez nous, pas de statistiques d'utilisation, pas de traceur.</p>
+  <h2>Durée de conservation et suppression</h2>
+  <p>Tes données restent tant que tu les gardes. Tu peux supprimer chaque carte ou projet depuis l'app, ou tout effacer avec « Effacer tous les projets et cartes » dans les Réglages ; la suppression se propage à tes autres appareils par iCloud. Les sauvegardes et le résumé restent dans ton iCloud Drive (Sauvegardes Apps → PlanFlow) jusqu'à ce que tu les supprimes. Les courriels que tu nous envoies sont conservés le temps de traiter ta demande.</p>
+  <h2>Sécurité</h2>
+  <p>Données gardées dans l'espace privé de ton iCloud, clé API rangée dans le trousseau de l'appareil, verrouillage de l'app par Face ID, Touch ID ou code si tu l'actives.</p>
+  <h2>Tes droits</h2>
+  <p>Tu peux demander à savoir quels renseignements nous détenons sur toi, les faire corriger ou supprimer, en écrivant à l'adresse ci-dessus. Tu peux aussi porter plainte auprès de la Commission d'accès à l'information du Québec.</p>
+  <h2>Changements</h2>
+  <p>Si cette politique change, la date en haut de page sera mise à jour et les changements importants seront signalés dans l'app.</p>
+
+  <footer>© 2026 Manuel Derussy · PlanFlow · <a href="../">Toutes les apps</a></footer>
+</main>
+</body>
+</html>
