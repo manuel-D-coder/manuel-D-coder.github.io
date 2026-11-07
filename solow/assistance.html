@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solow — Assistance</title>
+<meta name="description" content="Aide et contact pour Solow : dictée, compte rendu, code d’accès, accord du patient, sauvegardes.">
+<style>
+  :root {
+    --fond: #F7F9F9; --surface: #FFFFFF; --texte: #1E2A2D; --doux: #5C6B70;
+    --accent: #1FA7B0; --trait: #E3E8E9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fond: #171F21; --surface: #1F2A2D; --texte: #E8EEEF; --doux: #9AAAB0; --accent: #2CC0C9; --trait: #2C383B; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fond); color: var(--texte);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  .marque { display: flex; align-items: center; gap: 10px; font: 700 18px ui-rounded, -apple-system, sans-serif; }
+  .logo { width: 30px; height: 30px; border-radius: 9px; background: linear-gradient(135deg, var(--accent), #51708D); }
+  h1 { font: 700 34px/1.2 ui-rounded, -apple-system, sans-serif; margin: 28px 0 6px; }
+  .maj { color: var(--doux); font-size: 15px; margin: 0 0 28px; }
+  .resume {
+    background: var(--surface); border-radius: 18px; padding: 20px 22px; margin-bottom: 28px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05), 0 4px 8px rgba(0,0,0,.08);
+  }
+  .resume h2 { margin-top: 0; }
+  .resume ul { margin: 0; padding-left: 20px; }
+  h2 {
+    font: 700 13px/1.4 ui-rounded, -apple-system, sans-serif; letter-spacing: .06em;
+    text-transform: uppercase; color: var(--accent); margin: 32px 0 8px;
+  }
+  p, li { margin: 0 0 10px; }
+  a { color: var(--accent); }
+  h3 { font: 600 17px/1.4 -apple-system, sans-serif; margin: 18px 0 4px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--trait); color: var(--doux); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="marque"><div class="logo" aria-hidden="true"></div><a href="../" style="color:inherit;text-decoration:none">Solow</a></div>
+  <h1>Assistance</h1>
+  <p class="maj">Une question, un problème, une idée ? Écris-moi.</p>
+  <section class="resume">
+  <h2>Nous écrire</h2>
+  <p><a href="mailto:manuel.derussy@gmail.com">manuel.derussy@gmail.com</a></p>
+  <p>Indique ton appareil (iPhone, iPad ou Mac), la version de Solow (Réglages de l’app, tout en bas) et ce que tu faisais quand le problème est arrivé. Une capture d’écran aide beaucoup, à condition qu’on n’y voie <strong>aucune donnée de patient</strong>. N’envoie jamais de dossier, de transcription ni de compte rendu par courriel. Je réponds habituellement en quelques jours.</p>
+  </section>
+  <h2>Questions fréquentes</h2>
+  <h3>La dictée part-elle sur Internet ?</h3>
+  <p>Non. La transcription se fait sur ton appareil, avec la reconnaissance vocale d’Apple. L’audio n’est jamais envoyé ailleurs. Si la dictée ne démarre pas, autorise le micro et la reconnaissance vocale : Réglages de l’appareil → Solow.</p>
+  <h3>Comment générer un compte rendu ?</h3>
+  <p>Il faut deux choses. D’abord un accès à l’assistant : dans Réglages de l’app → Assistant IA, saisis ton code d’accès Solow, ou choisis « Ma propre clé Anthropic ». Ensuite, l’accord du patient : dans sa fiche, enregistre son consentement à l’assistance IA. Tant qu’il n’est pas enregistré, rien n’est envoyé.</p>
+  <h3>Qu’est-ce qui est envoyé pour rédiger le compte rendu ?</h3>
+  <p>Le texte de la séance et les éléments utiles du dossier. Le nom du patient est remplacé par un repère neutre avant l’envoi, puis remis sur ton appareil au retour. Le détail est dans la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+  <h3>Mes dossiers passent-ils d’un appareil à l’autre ?</h3>
+  <p>Oui, par ton compte iCloud. Utilise le même identifiant Apple sur tous tes appareils et vérifie qu’iCloud est activé pour Solow. Les champs cliniques sont chiffrés sur l’appareil avant la synchronisation. L’état de la synchro est affiché dans les Réglages de l’app.</p>
+  <h3>Où sont mes sauvegardes ?</h3>
+  <p>Dans ton iCloud Drive, dossier « Sauvegardes Apps ». Une copie est écrite au plus toutes les 6 heures. Tu peux voir la date de la dernière dans les Réglages de l’app.</p>
+  <h3>Comment protéger l’app ?</h3>
+  <p>Dans les Réglages de l’app, active « Verrouiller l’app (Face ID / Touch ID / code) ». Sur Mac, active aussi FileVault.</p>
+  <h3>Puis-je créer mes propres modèles de compte rendu ?</h3>
+  <p>Oui : Réglages de l’app → « Modèles de CR personnalisés », puis « Nouveau modèle ». Un modèle se modifie et se supprime au même endroit.</p>
+  <h2>Important</h2>
+  <p>Solow t’aide à rédiger. Il ne pose aucun diagnostic et ne remplace pas ton jugement clinique : relis toujours le compte rendu avant de le signer.</p>
+  <h2>Confidentialité</h2>
+  <p>Pour savoir ce que Solow fait des données, lis la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+
+  <footer>© 2026 Manuel Derussy · Solow · <a href="../">Toutes les apps</a></footer>
+</main>
+</body>
+</html>
